@@ -71,6 +71,7 @@ ecommerce-backend/
 ├── .gitignore                  # Files to ignore in git
 ├── package.json                # Project dependencies and scripts
 └── README.md                   # Project documentation
+```
 
 ## Installation
 
