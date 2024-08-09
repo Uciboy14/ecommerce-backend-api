@@ -72,3 +72,30 @@ ecommerce-backend/
 ├── package.json                # Project dependencies and scripts
 └── README.md                   # Project documentation
 
+## Installation
+
+To get started with this project, follow the steps below:
+
+1. **Clone the repository:**
+
+    ```bash
+    git clone https://github.com/yourusername/ecommerce-backend.git
+    cd ecommerce-backend
+    ```
+
+2. **Install dependencies:**
+
+    ```bash
+    npm install
+    ```
+
+3. **Set up environment variables:**
+
+   Create a `.env` file in the root directory with the following variables:
+
+   ```plaintext
+   PORT=5000
+   DB_CONNECTION_STRING=mongodb://localhost:27017/ecommerce
+   JWT_SECRET=your_jwt_secret_key
+   STRIPE_SECRET_KEY=your_stripe_secret_key
+
