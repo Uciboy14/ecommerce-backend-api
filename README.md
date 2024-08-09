@@ -99,4 +99,57 @@ To get started with this project, follow the steps below:
    DB_CONNECTION_STRING=mongodb://localhost:27017/ecommerce
    JWT_SECRET=your_jwt_secret_key
    STRIPE_SECRET_KEY=your_stripe_secret_key
+   ```
+
+4. **Start the development server:***
+    
+    ```bash
+    npm run dev
+    ```
+## Environment Variables
+
+The project requires the following environment variables:
+
+- `PORT`: The port on which the server will run.
+- `DB_CONNECTION_STRING`: The connection string for MongoDB.
+- `JWT_SECRET`: The secret key for signing JWT tokens.
+- `STRIPE_SECRET_KEY`: Your Stripe API secret key for payment processing.
+
+## API Endpoints
+
+The following are the main API endpoints available in this project:
+
+### Authentication
+
+- `POST /api/auth/register`: Register a new user
+- `POST /api/auth/login`: User login
+- `POST /api/auth/refresh-token`: Refresh JWT token
+
+### Products
+
+- `GET /api/products`: Get all products
+- `GET /api/products/:id`: Get a single product by ID
+- `POST /api/products`: Create a new product (Admin)
+- `PUT /api/products/:id`: Update product details (Admin)
+- `DELETE /api/products/:id`: Delete a product (Admin)
+
+### Orders
+
+- `POST /api/orders`: Create a new order
+- `GET /api/orders`: Get all orders for the logged-in user
+- `GET /api/orders/:id`: Get order details by ID
+
+### Cart
+
+- `POST /api/cart`: Add items to cart
+- `GET /api/cart`: Get the user's cart
+- `DELETE /api/cart/:itemId`: Remove item from cart
+
+### Payment
+
+- `POST /api/payment/charge`: Process a payment
+
+For detailed API documentation, please refer to the [API Documentation](#) (link to your API documentation if available).
+
+
 
